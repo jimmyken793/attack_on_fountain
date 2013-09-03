@@ -1,5 +1,5 @@
 require "serialport"
-
+require './pump_controller'
 
 #
 # Demp script for  PumpController class
