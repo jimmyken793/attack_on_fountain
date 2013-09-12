@@ -1,6 +1,6 @@
 require "serialport"
 require './pump_controller'
-
+require 'eventmachine'
 #
 # Demp script for  PumpController class
 #
@@ -13,12 +13,17 @@ class PumpCommandHandler < EM::Connection
 
     def initialize(pc)
         @pc = pc
-        @buffer = []
+        @buffer = ''
+        puts "Command format: MOTOR_ID[,MOTOR_ID....] LEVEL"
+        print "$ "
     end
 
     def process_command
         begin
-            @pc.send(@buffer[0].to_i, @buffer[1..-1].join.to_i)
+            cmd = @buffer.split(' ')
+            cmd[0].split(',').each{|m_id|
+                @pc.send(m_id.to_i+1, cmd[1].to_i)
+            }
         rescue
         end
     end
@@ -26,7 +31,8 @@ class PumpCommandHandler < EM::Connection
         data.split('').each{|k|
             if k == "\n"
                 process_command
-                @buffer = []
+                @buffer = ''
+                print "$ "
             else
                 @buffer << k
             end
