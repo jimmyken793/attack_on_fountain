@@ -48,6 +48,17 @@ module double_bearing_frame(r1, r2, h, l, d, holder_depth, holder_thick=2, bar_o
 	}
 }
 
+module motor_holder(){
+	rotate([90,0,0]) difference(){
+		cube([50,50,10],center=true);
+		translate([0,0,3]) cube([42.4,42.4,7],center=true);
+		for(pos = [[-15.5,15.5,0],[15.5,15.5,0],[15.5,-15.5,0],[-15.5,-15.5,0]]){
+			translate(pos) cylinder(r=1.5,h=11,center=true,$fn=100);
+		}
+		cylinder(r=11.5,h=20,center=true,$fn=100);
+	}
+}
+
 /*
 r1 = 10;
 r2 = 7.5;
