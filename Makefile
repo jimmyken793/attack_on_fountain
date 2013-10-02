@@ -4,7 +4,7 @@ MODELS = $(filter-out lib.scad, $(wildcard *.scad))
 STL_FILES = $(MODELS:%.scad=stl/%.stl)
 GCODE_FILES = $(MODELS:%.scad=gcode/%.gcode)
 
-all: $(STL_FILES) $(GCODE_FILES) gcode stl
+all: $(STL_FILES) stl
 
 stl:
 	mkdir stl
