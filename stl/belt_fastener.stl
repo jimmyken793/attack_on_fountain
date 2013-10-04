@@ -5291,20 +5291,6 @@ solid OpenSCAD_Model
       vertex -11.9527 0.751999 3.5
     endloop
   endfacet
-  facet normal 0.999877 -0.0157124 0
-    outer loop
-      vertex -8.49877 0.078527 -3.5
-      vertex -8.49877 0.078527 3.5
-      vertex -8.5 0 3.5
-    endloop
-  endfacet
-  facet normal 0.999877 -0.0157124 0
-    outer loop
-      vertex -8.5 0 -3.5
-      vertex -8.49877 0.078527 -3.5
-      vertex -8.5 0 3.5
-    endloop
-  endfacet
   facet normal 0.999877 0.0157124 0
     outer loop
       vertex -8.5 0 3.5
@@ -5317,6 +5303,20 @@ solid OpenSCAD_Model
       vertex -8.5 0 -3.5
       vertex -8.5 0 3.5
       vertex -8.49877 -0.078527 -3.5
+    endloop
+  endfacet
+  facet normal 0.999877 -0.0157124 0
+    outer loop
+      vertex -8.49877 0.078527 -3.5
+      vertex -8.49877 0.078527 3.5
+      vertex -8.5 0 3.5
+    endloop
+  endfacet
+  facet normal 0.999877 -0.0157124 0
+    outer loop
+      vertex -8.5 0 -3.5
+      vertex -8.49877 0.078527 -3.5
+      vertex -8.5 0 3.5
     endloop
   endfacet
   facet normal 0.99889 -0.0470993 0
@@ -14699,20 +14699,6 @@ solid OpenSCAD_Model
       vertex 8 -3.4641 3.5
     endloop
   endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex -3.5 -4.33013 6.5
-      vertex -8.5 -4.33013 6.5
-      vertex -8.5 -4.33013 3.5
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex -3.5 -4.33013 3.5
-      vertex -3.5 -4.33013 6.5
-      vertex -8.5 -4.33013 3.5
-    endloop
-  endfacet
   facet normal -0.866025 -0.5 -3.84593e-16
     outer loop
       vertex -11 0 6.5
@@ -14724,6 +14710,20 @@ solid OpenSCAD_Model
     outer loop
       vertex -8.5 -4.33013 6.5
       vertex -11 0 3.5
+      vertex -8.5 -4.33013 3.5
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -3.5 -4.33013 6.5
+      vertex -8.5 -4.33013 6.5
+      vertex -8.5 -4.33013 3.5
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -3.5 -4.33013 3.5
+      vertex -3.5 -4.33013 6.5
       vertex -8.5 -4.33013 3.5
     endloop
   endfacet
